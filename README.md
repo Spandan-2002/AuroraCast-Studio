@@ -1,54 +1,65 @@
 # 🌌 AuroraCast Studio
 
-AuroraCast Studio is a reimagined audio workspace for creators who want AI-native tooling without losing editorial control. The interface blends a strategic "Creator Cockpit" with momentum insights, trending voice textures, and a refreshed listening surface so you can move from idea to published show in a single flow.
+**AuroraCast Studio** is an **AI-native audio creation platform** built entirely from scratch — designed for creators who want the power of generative tools **without losing editorial control**.  
+It merges **Next.js 15**, **Convex**, **Clerk**, and **OpenAI** into a fluid, responsive workspace that lets you move seamlessly from idea → narration → analytics → publication.
 
-> **Why this rebuild?** The original Podcastr template has been redesigned from the ground up: new branding, navigation, information architecture, and data visualisations turn it into a creator-first dashboard rather than a simple listing app.
+AuroraCast redefines what an audio dashboard can be — not just a list of episodes, but an intelligent, data-driven environment that adapts to the creator’s momentum.
 
 ---
 
 ## ✨ Highlights
-- **Creator Cockpit:** A glassmorphism toolbar summarises output velocity, listener minutes, and gives jump-in shortcuts to the AI studio.
-- **Momentum Insights:** A context panel surfaces trending episodes, rising creators, and session blueprints tailored to your account state.
-- **Voice Texture Board:** Discover the standout episodes for each AI voice model with one-click previews.
-- **Heroic Launchpad:** The homepage hero spotlights the strongest performing story while giving instant access to creation tools.
-- **Responsive top navigation:** Consolidated control centre with global search, quick actions, and Clerk authentication.
+
+- **🎛️ Creator Cockpit:** Real-time metrics summarizing listener minutes, publishing velocity, and engagement rate — all at a glance.
+- **📈 Momentum Insights:** Smart analytics surfacing trending episodes, rising creators, and AI-generated blueprint suggestions.
+- **🎙️ Voice Texture Board:** Explore, preview, and compare standout AI voice models with one-click playback.
+- **🚀 Heroic Launchpad:** A dynamic homepage spotlighting your top-performing story with instant access to creation tools.
+- **🧭 Unified Navigation:** A global command bar with search, quick actions, and secure Clerk authentication — fully responsive and glassmorphic.
 
 ---
 
 ## 🧭 User Flow
-1. **Sign in** with Clerk to unlock the cockpit metrics and the collaborative studio.
-2. **Browse the overview** dashboard for trending releases, fresh uploads, and voice highlights.
-3. **Jump into the Studio** (`/create-podcast`) to script with AI prompts, upload narration, and craft cover art.
-4. **Share or manage episodes** from the profile view—listener stats update in real time from Convex.
+
+1. **Sign in** securely with Clerk to unlock cockpit metrics and collaborative studio features.  
+2. **Browse the dashboard** to discover trending releases, recent uploads, and personalized voice insights.  
+3. **Jump into the Studio (`/create-podcast`)** to script using AI prompts, record or upload narration, and design custom cover art.  
+4. **Publish and manage** your episodes from the profile view — listener stats update in real time through Convex.
 
 ---
 
 ## 🛠️ Tech Stack
-- **Framework:** Next.js 15 (App Router, client components for interactive surfaces)
-- **Backend & storage:** Convex for serverless data, actions, and file storage
-- **Auth:** Clerk (multi-tenant ready)
-- **Styling:** Tailwind CSS with a custom Aurora palette + shadcn/ui primitives
-- **AI Integrations:** OpenAI (voice + image generation hooks)
-- **Utilities:** React Hook Form, Zod, UploadStuff for asset ingestion
+
+| Layer | Technology | Purpose |
+|-------|-------------|----------|
+| **Framework** | [Next.js 15](https://nextjs.org/) | Modern React App Router + Client Components |
+| **Backend / Data** | [Convex](https://www.convex.dev/) | Serverless database, mutations, file storage |
+| **Authentication** | [Clerk](https://clerk.com/) | Multi-tenant auth and user management |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/) | Custom Aurora palette + design primitives |
+| **AI Integrations** | [OpenAI API](https://platform.openai.com/) | Voice synthesis, script assist, image generation |
+| **Utilities** | React Hook Form, Zod, UploadStuff | Schema validation + media ingestion |
 
 ---
 
 ## 🚀 Getting Started
+
 ```bash
-# 1. Clone under your namespace
-git clone https://github.com/Spandan-2002/Podcastr auroracast
-cd auroracast
+# 1. Clone the repository
+git clone https://github.com/Spandan-2002/AuroraCast-Studio.git
+cd AuroraCast-Studio
 
 # 2. Install dependencies
 npm install
 
-# 3. Configure environment
-cp .env.example .env.local   # create this file with the keys below
+# 3. Configure environment variables
+cp .env.example .env.local   # create local env file
 
-# 4. Run the dev server
+# 4. Run the development server
 npm run dev
 ```
-Visit <http://localhost:3000> to explore the dashboard.
+
+
+---
+
+Visit <http://localhost:3000> to explore the AuroraCast dashboard.
 
 ### Required Environment Variables
 | Variable | Purpose |
