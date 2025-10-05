@@ -1,6 +1,7 @@
 # 🌌 AuroraCast Studio
 
-**AuroraCast Studio** is an **AI-native audio creation platform** built entirely from scratch — designed for creators who want the power of generative tools **without losing editorial control**.  
+**AuroraCast Studio** is an **AI-native audio creation platform**, designed for creators who want the power of generative tools **without losing editorial control**.  
+
 It merges **Next.js 15**, **Convex**, **Clerk**, and **OpenAI** into a fluid, responsive workspace that lets you move seamlessly from idea → narration → analytics → publication.
 
 AuroraCast redefines what an audio dashboard can be — not just a list of episodes, but an intelligent, data-driven environment that adapts to the creator’s momentum.
