@@ -96,13 +96,8 @@ Key UX modules introduced in this redesign:
 
 ---
 
-## 🙏 Acknowledgements
-AuroraCast builds on the open-source Podcastr concept originally published by [Adrian Hajdin](https://github.com/adrianhajdin/podcastr). This fork introduces a new brand identity, layout system, and data experiences tailored to my workflow.
-
----
-
 ## 📬 Contact
 - Issues & feature ideas: [GitHub Issues](https://github.com/Spandan-2002/Podcastr/issues)
-- Direct email: [hello@auroracast.dev](mailto:hello@auroracast.dev)
+- Direct email: [spandan.rout@nyu.edu](mailto:spandan.rout@nyu.edu)
 
 Enjoy crafting immersive audio stories! 🎧
