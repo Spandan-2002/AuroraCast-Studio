@@ -109,7 +109,7 @@ Key UX modules introduced in this redesign:
 ---
 
 ## 📬 Contact
-- Issues & feature ideas: [GitHub Issues](https://github.com/Spandan-2002/AuroraCast/issues)
+- Issues: [GitHub Issues](https://github.com/Spandan-2002/AuroraCast/issues)
 - Email ID: [spandan.rout@nyu.edu](mailto:spandan.rout@nyu.edu)
 
 Enjoy crafting immersive audio stories! 🎧
