@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #05070f;
+}
+
+@layer utilities {
+  .input-class {
+    @apply text-16 placeholder:text-16 bg-black-2 rounded-[8px] placeholder:text-gray-1 border border-black-6 text-white-4 focus-visible:border-orange-1 focus-visible:outline-none;
+  }
+  .podcast_grid {
+    @apply grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4;
+  }
+  .right_sidebar {
+    @apply sticky right-0 top-0 flex w-[320px] flex-col overflow-y-hidden border border-black-6/60 bg-black-1/70 px-8 pt-10 max-xl:hidden backdrop-blur-lg;
+  }
+  .left_sidebar {
+    @apply sticky left-0 top-0 flex w-fit flex-col justify-between border border-r-0 border-black-6/60 bg-black-1/70 pt-10 text-white-1 max-md:hidden lg:w-[280px] lg:pl-10 backdrop-blur-lg;
+  }
+  .generate_thumbnail {
+    @apply mt-[30px] flex w-full max-w-[520px] flex-col justify-between gap-2 rounded-lg border border-black-6 bg-black-1 px-2.5 py-2 md:flex-row md:gap-0;
+  }
+  .image_div {
+    @apply flex-center mt-5 h-[142px] w-full cursor-pointer flex-col gap-3 rounded-xl border-[3.2px] border-dashed border-black-6 bg-black-1;
+  }
+  .carousel_box {
+    @apply relative flex h-fit aspect-square w-full flex-none cursor-pointer flex-col justify-end rounded-xl border border-black-6/50 bg-black-2/60 backdrop-blur;
+  }
+  .button_bold-16 {
+    @apply text-[16px] font-bold text-white-1 transition-all duration-500;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .text-12 {
+    @apply text-[12px] leading-normal;
+  }
+  .text-14 {
+    @apply text-[14px] leading-normal;
+  }
+  .text-16 {
+    @apply text-[16px] leading-normal;
+  }
+  .text-18 {
+    @apply text-[18px] leading-normal;
+  }
+  .text-20 {
+    @apply text-[20px] leading-normal;
+  }
+  .text-24 {
+    @apply text-[24px] leading-normal;
+  }
+  .text-32 {
+    @apply text-[32px] leading-normal;
+  }
+}
+
+/* ===== custom classes ===== */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #15171c;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #222429;
+  border-radius: 50px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.glassmorphism {
+  background: linear-gradient(135deg, rgba(127, 90, 240, 0.18) 0%, rgba(44, 177, 188, 0.12) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.glassmorphism-auth {
+  background: rgba(8, 11, 20, 0.84);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+.glassmorphism-black {
+  background: rgba(11, 16, 32, 0.75);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+}
+
+/* ======= clerk overrides ======== */
+.cl-socialButtonsIconButton {
+  border: 2px solid #222429;
+}
+.cl-button {
+  color: white;
+}
+.cl-socialButtonsProviderIcon__github {
+  filter: invert(1);
+}
+.cl-internal-b3fm6y {
+  background: #7f5af0;
+}
+.cl-formButtonPrimary {
+  background: #7f5af0;
+}
+.cl-footerActionLink {
+  color: #7f5af0;
+}
+.cl-headerSubtitle {
+  color: #c5d0e6;
+}
+.cl-logoImage {
+  width: 10rem;
+  height: 3rem;
+}
+.cl-internal-4a7e9l {
+  color: white;
+}
+
+.cl-userButtonPopoverActionButtonIcon {
+  color: white;
+}
+.cl-internal-wkkub3 {
+  color: #2cb1bc;
+}
+@layer base {
+  :root {
+    --background: 232 75% 6%;
+    --foreground: 222 100% 96%;
+    --card: 230 62% 8%;
+    --card-foreground: 222 100% 96%;
+    --popover: 232 75% 6%;
+    --popover-foreground: 222 100% 96%;
+    --primary: 256 85% 66%;
+    --primary-foreground: 228 100% 97%;
+    --secondary: 187 67% 42%;
+    --secondary-foreground: 227 100% 96%;
+    --muted: 228 36% 22%;
+    --muted-foreground: 223 30% 70%;
+    --accent: 256 42% 28%;
+    --accent-foreground: 226 100% 96%;
+    --destructive: 2 65% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 227 38% 18%;
+    --input: 227 38% 18%;
+    --ring: 256 85% 66%;
+    --chart-1: 256 75% 62%;
+    --chart-2: 187 59% 46%;
+    --chart-3: 16 86% 58%;
+    --chart-4: 46 100% 64%;
+    --chart-5: 199 72% 52%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 230 62% 8%;
+    --foreground: 222 100% 96%;
+    --card: 230 62% 8%;
+    --card-foreground: 222 100% 96%;
+    --popover: 228 56% 10%;
+    --popover-foreground: 222 100% 96%;
+    --primary: 256 85% 66%;
+    --primary-foreground: 228 100% 97%;
+    --secondary: 187 55% 38%;
+    --secondary-foreground: 227 100% 96%;
+    --muted: 228 36% 22%;
+    --muted-foreground: 223 30% 70%;
+    --accent: 256 42% 28%;
+    --accent-foreground: 226 100% 96%;
+    --destructive: 2 65% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 227 38% 18%;
+    --input: 227 38% 18%;
+    --ring: 256 85% 66%;
+    --chart-1: 256 75% 62%;
+    --chart-2: 187 59% 46%;
+    --chart-3: 16 86% 58%;
+    --chart-4: 46 100% 64%;
+    --chart-5: 199 72% 52%;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
