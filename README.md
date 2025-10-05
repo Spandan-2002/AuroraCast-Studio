@@ -22,7 +22,7 @@ AuroraCast redefines what an audio dashboard can be — not just a list of episo
 
 1. **Sign in** securely with Clerk to unlock cockpit metrics and collaborative studio features.  
 2. **Browse the dashboard** to discover trending releases, recent uploads, and personalized voice insights.  
-3. **Jump into the Studio (`/create-podcast`)** to script using AI prompts, record or upload narration, and design custom cover art.  
+3. **Jump into the Studio** to script using AI prompts, record or upload narration, and design custom cover art.  
 4. **Publish and manage** your episodes from the profile view — listener stats update in real time through Convex.
 
 ---
