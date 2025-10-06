@@ -53,7 +53,10 @@ npm install
 # 3. Configure environment variables
 cp .env.example .env.local   # create local env file
 
-# 4. Run the development server
+# 4. Start the Convex backend
+npx convex dev
+
+# 5. Run the development server
 npm run dev
 ```
 
